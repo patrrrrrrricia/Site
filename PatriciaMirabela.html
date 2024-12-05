@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Patricia Mirabela Leonte">
+  <title>𝐏 𝐀 𝐓 𝐑 𝐈 𝐂 𝐈 𝐀</title>
+  <link rel="stylesheet" href="PatriciaMirabela.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"> 
+  <link rel="icon" href="photos/icon.jpeg" type="image/jpeg">
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="photos/profil.jpeg" alt="Poza Profil" class="profile-pic">
+      <h1>𝐏𝐚𝐭𝐫𝐢𝐜𝐢𝐚 𝐌𝐢𝐫𝐚𝐛𝐞𝐥𝐚</h1>
+    </header>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/PatriciaLeonte28/" class="icon"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/patrrrrrrricia/?hl=ro" class="icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://open.spotify.com/user/21qbtiynnk3ko2sthhemegsqa?si=2dJEbRG7S1W38j835z0DkQ&fbclid=PAZXh0bgNhZW0CMTEAAabrDASWycEWTRXfmzYnAS_5tI_ny3OEcSYPanrlSPQEI40VkxuYCDd9mqc_aem_2Bo5kzdtKDRfI3eAZXSAwA&nd=1&dlsi=5f44738b7d7e4c57" class="icon"><i class="fab fa-spotify"></i></a>
+        <a href="https://www.snapchat.com/add/patrrrrrrrricia?fbclid=PAZXh0bgNhZW0CMTEAAaamR3sZzC43kiLfINSvxl4UPg7uKLUfoZB3Gzi6zcJJKiRzbezdbmuXMNM_aem_Uy-nHcPdpBMA8qqqShuoZw" class="icon"><i class="fab fa-snapchat"></i></a>
+        <a href="https://ro.pinterest.com/patrrrrrrricia/" class="icon"><i class="fab fa-pinterest"></i></a>
+      </div>
+      
+    <main>
+      <div class="link">
+        <a href="https://vsco.co/patrrrrrrricia/gallery" class="heart-link">
+          <span class="heart">🤍</span>
+        </a>
+      </div>
+      <div class="link">
+        <a href="https://www.tiktok.com/@patrrrrrrricia?_t=8mQXhafU7F3&_r=1" class="heart-link">
+          <span class="heart">🤍</span>
+        </a>
+      </div>
+      <div class="link">
+        <a href="https://revolut.me/patrrrrrrrricia" class="heart-link">
+          <span class="heart">🤍</span>
+        </a>
+      </div>
+      
+
+    
+    </main>
+  </div>
+
+  
+  <script>
+    // Detectăm clicurile pe linkuri
+    document.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevenim navigarea imediată
+        const targetUrl = this.href; // Salvăm URL-ul țintă
+  
+        // Adăugăm clasa de animație
+        document.body.classList.add('fade-out');
+  
+        // Navigăm către URL după finalizarea animației
+        setTimeout(() => {
+          window.location.href = targetUrl;
+        }, 1000); // Durata trebuie să fie sincronizată cu durata animației (1s în acest caz)
+      });
+    });
+  </script>
+  
+</body>
+</html>

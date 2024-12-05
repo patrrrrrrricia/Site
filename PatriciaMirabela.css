@@ -1,0 +1,158 @@
+/* Resetări de bază */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  /* CSS pentru efectul de fade-out */
+body.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+  
+  .container {
+    text-align: center;
+    max-width: 400px;
+  }
+  
+  .profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 20px 0;
+    border: 3px solid #000000;
+  }
+  
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  .icon {
+    text-decoration: none;
+    font-size: 24px;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .icon:hover {
+    color: #fe5e93; /* Schimbă culoarea la hover */
+  }
+  
+  
+  main {
+    margin-top: 20px;
+  }
+  
+ /* Stil pentru containerul link */
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+    position: relative;
+    border-bottom: 1px solid #ffffff; /* Linia albă subțire */
+    margin-bottom: 10px;
+  }
+  
+  .link a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000;
+    position: relative;
+  }
+  
+  .link a:hover::after {
+    transform: scaleX(1); /* Lărgește linia la hover */
+  }
+  
+  
+  .heart {
+    font-size: 18px;
+    color: #fff;
+    margin-right: 10px;
+  }
+
+  /* Stil pentru linkurile cu inima */
+.heart-link {
+  text-decoration: none; /* Eliminăm sublinierea implicită */
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease; /* Efecte la hover */
+}
+
+.heart {
+  font-size: 2rem; /* Dimensiune mai mare pentru inimă */
+  color: #fff; /* Culoare albă implicită */
+  transition: color 0.3s ease, transform 0.3s ease; /* Tranziție pentru animație */
+}
+
+.heart-link:hover .heart {
+  color: #ff69b4; /* Roz la hover */
+  transform: scale(1.2); /* Mărire la hover */
+}
+
+
+
+
+/* Stilizare buton Neon */
+.neon-btn {
+  position: fixed;
+  bottom: 20px; /* Distanță de jos */
+  right: 20px; /* Distanță de dreapta */
+  width: 50px; /* Lățime buton */
+  height: 45px; /* Înălțime buton */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid #f9cdf1; /* Lumină neon roz */
+  border-radius: 10px; /* Colțuri rotunjite */
+  background-color: transparent; /* Fundal transparent */
+  box-shadow: 0 0 10px #f9cdf1, 0 0 20px #f9cdf1, 0 0 30px #f9cdf1; /* Efect de neon */
+  transition: all 0.3s ease;
+}
+
+.neon-btn:hover {
+  background-color: #f9cdf1; /* Culoare de fundal la hover */
+  color: #f9cdf1; /* Culoare text pe fundal roz */
+  box-shadow: 0 0 20px #f9cdf1, 0 0 30px #f9cdf1, 0 0 40px #f9cdf1, 0 0 50px #f9cdf1; /* Iluminare mai intensă */
+  transform: scale(1.1); /* Creștere la hover */
+}
+
+.neon-btn:active {
+  transform: scale(1.05); /* Efect de apăsare */
+}
+
+/* Efect de text luminos */
+.neon-btn span {
+  display: inline-block;
+  text-shadow: 0 0 5px #f9cdf1, 0 0 10px #f9cdf1, 0 0 20px #f9cdf1, 0 0 40px #f9cdf1;
+}

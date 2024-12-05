@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>𝐏 𝐀 𝐓 𝐑 𝐈 𝐂 𝐈 𝐀</title>
+  <link rel="stylesheet" href="./PATRICIA.css">
+  <link rel="icon" href="photos/icon.jpeg" type="image/png">
+</head>
+<body>
+
+<a href="PatriciaMirabela.html" class="glowing-btn"> 
+  <span class="glowing-txt">P<span class="faulty-letter">ATRI</span>CIA</span>
+</a>
+
+//animatie
+<script>
+  // Detectăm clicurile pe linkuri
+  document.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault(); // Prevenim navigarea imediată
+      const targetUrl = this.href; // Salvăm URL-ul țintă
+
+      // Adăugăm clasa de animație
+      document.body.classList.add('fade-out');
+
+      // Navigăm către URL după finalizarea animației
+      setTimeout(() => {
+        window.location.href = targetUrl;
+      }, 1000); // Durata trebuie să fie sincronizată cu durata animației (1s în acest caz)
+    });
+  });
+</script>
+
+
+</body>
+</html>
